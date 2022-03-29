@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="/style.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+<title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <section class="container" id="principalContainer">
+      <section class="container-rating">
+       <span class="star-icon">
+         <img src="/images/icon-star.svg" alt="">
+       </span>
+       <div class="rating-text">
+       <h1>How did we do?</h1>
+       <p>Please let us know how we did with your support <br> request. All feedback is appreciated 
+       to help us <br>improve our offering!</p>
+       </div>
+       <ul class="numeral-button" id="header-btn">
+         <li class="btn active">1</li>
+         <li class="btn">2</li>
+         <li class="btn">3</li>
+         <li class="btn">4</li>
+         <li class="btn">5</li>
+       </ul>
+       <input type="submit" value="SUBMIT" class="submit" id="submit-btn">
+   </section>
+  </section>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <section class="container-front" id="frontContainer">
+    <section class="content-front">
+      <img src="/images/illustration-thank-you.svg" alt="">
+      <span class="counter-front" id="rating">
+        You selected &nbsp;<span id="rating-number">0</span>&nbsp;
+        out of 5
+      </span>
+      <div class="text-front">
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating.<br> If you ever need more support, 
+          don’t hesitate to <br>get in touch!</p>
+       </div>
+    </section>
+  </section>
+
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src='/index.js'></script>
+</body>
+</html>
